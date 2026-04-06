@@ -13,6 +13,7 @@ import UserModifyPage from "./pages/UserModifyPage";
 import WishListPage from "./pages/WishListPage";
 import UserCouponPage from "./pages/UserCouponPage";
 import UserAddressPage from "./pages/UserAddressPage";
+import UserSubscriptionPage from "./pages/UserSubscriptionPage";
 
 export default function Router() {
   return (
@@ -30,6 +31,10 @@ export default function Router() {
           <Route path="/profile/wishlist" element={<WishListPage />} />
           <Route path="/profile/coupons" element={<UserCouponPage />} />
           <Route path="/profile/address" element={<UserAddressPage />} />
+          <Route
+            path="/profile/subscription"
+            element={<UserSubscriptionPage />}
+          />
 
           <Route path="/cs" element={<CSPage />} />
 
