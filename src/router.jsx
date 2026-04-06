@@ -9,6 +9,7 @@ import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import CSPage from "./pages/CSPage";
 import UserProfilePage from "./pages/UserProfilePage";
+import UserModifyPage from "./pages/UserModifyPage";
 
 export default function Router() {
   return (
@@ -22,6 +23,7 @@ export default function Router() {
           <Route path="/order/list" element={<OrderPage />} />
 
           <Route path="/profile" element={<UserProfilePage />} />
+          <Route path="/profile/modify" element={<UserModifyPage />} />
 
           <Route path="/cs" element={<CSPage />} />
 
