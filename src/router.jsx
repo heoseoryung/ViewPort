@@ -11,6 +11,7 @@ import CSPage from "./pages/CSPage";
 import UserProfilePage from "./pages/UserProfilePage";
 import UserModifyPage from "./pages/UserModifyPage";
 import WishListPage from "./pages/WishListPage";
+import UserCouponPage from "./pages/UserCouponPage";
 
 export default function Router() {
   return (
@@ -26,6 +27,7 @@ export default function Router() {
           <Route path="/profile" element={<UserProfilePage />} />
           <Route path="/profile/modify" element={<UserModifyPage />} />
           <Route path="/profile/wishlist" element={<WishListPage />} />
+          <Route path="/profile/coupons" element={<UserCouponPage />} />
 
           <Route path="/cs" element={<CSPage />} />
 

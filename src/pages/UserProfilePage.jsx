@@ -40,7 +40,7 @@ const UserProfilePage = () => {
       icon: Gift,
       count: user.coupons,
       desc: "사용 가능한 쿠폰",
-      to: "#",
+      to: "/profile/coupons",
     },
     {
       title: "배송지 관리",
