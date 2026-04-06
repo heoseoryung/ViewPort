@@ -46,7 +46,7 @@ const UserProfilePage = () => {
       title: "배송지 관리",
       icon: MapPin,
       desc: "자주 쓰는 배송지 수정",
-      to: "#",
+      to: "/profile/address",
     },
     { title: "정기배송 관리", icon: Truck, desc: "구독 서비스 설정", to: "#" },
   ];
