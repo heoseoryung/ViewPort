@@ -31,9 +31,9 @@ const UserProfilePage = () => {
     {
       title: "관심상품",
       icon: Heart,
-      count: user.wishlistCount,
+      count: 3,
       desc: "찜해둔 아이템 확인",
-      to: "#",
+      to: "/profile/wishlist",
     },
     {
       title: "쿠폰함",

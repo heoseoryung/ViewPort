@@ -10,6 +10,7 @@ import SignupPage from "./pages/SignupPage";
 import CSPage from "./pages/CSPage";
 import UserProfilePage from "./pages/UserProfilePage";
 import UserModifyPage from "./pages/UserModifyPage";
+import WishListPage from "./pages/WishListPage";
 
 export default function Router() {
   return (
@@ -24,6 +25,7 @@ export default function Router() {
 
           <Route path="/profile" element={<UserProfilePage />} />
           <Route path="/profile/modify" element={<UserModifyPage />} />
+          <Route path="/profile/wishlist" element={<WishListPage />} />
 
           <Route path="/cs" element={<CSPage />} />
 
