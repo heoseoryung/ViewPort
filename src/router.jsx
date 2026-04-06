@@ -1,13 +1,14 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Layout from './components/Layout'
-import HomePage from './pages/HomePage'
-import StorePage from './pages/StorePage'
-import OdogPage from './pages/OdogPage'
-import ProductDetailPage from './pages/ProductDetailPage'
-import OrderPage from './pages/OrderPage'
-import LoginPage from './pages/LoginPage'
-import SignupPage from './pages/SignupPage'
-import CSPage from './pages/CSPage' 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import HomePage from "./pages/HomePage";
+import StorePage from "./pages/StorePage";
+import OdogPage from "./pages/OdogPage";
+import ProductDetailPage from "./pages/ProductDetailPage";
+import OrderPage from "./pages/OrderPage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
+import CSPage from "./pages/CSPage";
+import UserProfilePage from "./pages/UserProfilePage";
 
 export default function Router() {
   return (
@@ -19,9 +20,10 @@ export default function Router() {
           <Route path="/product/list/odog" element={<OdogPage />} />
           <Route path="/product/detail/:id" element={<ProductDetailPage />} />
           <Route path="/order/list" element={<OrderPage />} />
-          
-         
-          <Route path="/cs" element={<CSPage />} /> 
+
+          <Route path="/profile" element={<UserProfilePage />} />
+
+          <Route path="/cs" element={<CSPage />} />
 
           <Route path="*" element={<HomePage />} />
         </Route>
@@ -29,5 +31,5 @@ export default function Router() {
         <Route path="/signup" element={<SignupPage />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
